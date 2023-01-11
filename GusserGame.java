@@ -29,7 +29,6 @@ class Umpire{
 	int numFromPlayer2;
 	int numFromPlayer3;
 	
-	
 	void collectNumFromGuesser(){
 		Guesser g=new Guesser();
 		numFromGuesser=g.guessNum();
