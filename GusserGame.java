@@ -1,7 +1,6 @@
 import java.util.*;
 
 
-
 class Guesser{
 	int guessNum;
 	int guessNum() {
@@ -11,6 +10,8 @@ class Guesser{
 	return guessNum;
 	}
 }
+
+
 class Player{
 	int guessNum;
 	int guessNum() {
@@ -20,6 +21,8 @@ class Player{
 	return guessNum;
 	}
 }
+
+
 class Umpire{
 	int numFromGuesser;
 	int numFromPlayer1;
@@ -36,8 +39,7 @@ class Umpire{
 			numFromGuesser=g.guessNum();
 		}
 	}
-	
-	
+		
 	void collectNumFromPlayer() {
 		Player p1= new Player();
 		numFromPlayer1=p1.guessNum();
@@ -63,8 +65,6 @@ class Umpire{
 			numFromPlayer1=p1.guessNum();
 		}
 	}
-	
-	
 	
 	void compare() {
 		if(numFromPlayer1==numFromGuesser) {
@@ -102,7 +102,8 @@ class Umpire{
 			
 	}
 }
-	
+
+
 public class GusserGame {
 
 	public static void main(String[] args) {
@@ -111,6 +112,7 @@ public class GusserGame {
 		u.collectNumFromGuesser();
 		u.collectNumFromPlayer();
 		u.compare();
+		
 	}
 
 }
